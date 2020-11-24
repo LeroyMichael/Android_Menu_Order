@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".order_complete"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/myorder_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MY ORDER"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="24sp"
+        android:layout_marginTop="27dp"
+        android:layout_marginHorizontal="123dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myorder_header"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="40dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Total:"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/total_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Rp.0"
+        android:textSize="17dp"
+        android:textColor="@color/red"/>
+
+    <Button
+        android:id="@+id/payNow"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/myorder_header"
+        android:layout_alignRight="@+id/total"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_toEndOf="@+id/total"
+        android:background="@drawable/header_background"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:onClick="home"
+        android:stateListAnimator="@null"
+        android:text="Back to Home"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/thanks"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payNow"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="10dp"
+        android:text="Your order is Complete, Thank you." />
+
+    <GridView
+        android:id="@+id/list_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/thanks"
+        android:background="@drawable/myorder_overlay">
+
+
+    </GridView>
+
+</RelativeLayout>

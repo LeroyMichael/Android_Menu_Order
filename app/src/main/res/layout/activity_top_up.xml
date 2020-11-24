@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopUp"
+    android:background="@color/white">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/myorder_overlay"
+        />
+    <TextView
+        android:id="@+id/myorder_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TopUp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="24sp"
+        android:layout_marginTop="27dp"
+        android:layout_marginHorizontal="123dp"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myorder_header"
+        android:layout_alignParentStart="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Total Cash: Rp."
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/total_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-26dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/total"
+        android:text="10000"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/topUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topup_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="161dp"
+        android:hint="Add Cash"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/topup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderMore"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="131dp"
+        android:background="@drawable/topup"
+        android:onClick="topUp" />
+
+    <Button
+        android:id="@+id/orderMore"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginHorizontal="80dp"
+        android:background="@drawable/header_background"
+        android:text="Back to Menu"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
+        android:onClick="menu"/>
+
+
+</RelativeLayout>

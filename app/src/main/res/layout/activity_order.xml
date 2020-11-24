@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/header_background"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ORDER"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="28sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/myOrder"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/mycart_button"
+        android:text="My Order"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
+        android:onClick="myOrder"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item"
+            android:text="Item Name"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:text="price"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/qty"
+            android:hint="Quantity"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/orderMore"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="80dp"
+            android:background="@drawable/mycart_button"
+            android:text="Order More"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:elevation="10dp"
+            android:stateListAnimator="@null"
+            android:onClick="order"/>
+    </LinearLayout>
+
+</LinearLayout>
